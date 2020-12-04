@@ -37,7 +37,7 @@ const Service = () => {
    const Style = useStyles();
    return (
       <>
-         <Container fixed>
+         <Container fixed data-aos="fade-down">
             <Grid container>
                <Grid md={4}>
                   <div className={Style.WellSerice}>

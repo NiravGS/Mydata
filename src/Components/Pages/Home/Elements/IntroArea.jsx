@@ -151,7 +151,7 @@ const TopTagline = () => {
    const Style = useStyles();
    return (
       <>
-         <div className={Style.introArea}>
+         <div className={Style.introArea} >
             <div className={Style.bgWrapper}>
                <img src={WrapperImg} alt="" />
             </div>
@@ -159,8 +159,8 @@ const TopTagline = () => {
                <div className={Style.SlideContent}>
                   <Grid container>
                      <Grid item md={12}>
-                        <Container fixed>
-                           <div className={Style.introLayer}>
+                        <Container fixed data-aos="fade-up">
+                           <div className={Style.introLayer} >
                               <div className={Style.title1}>
                                  It Solutions . Services Company
                               </div>

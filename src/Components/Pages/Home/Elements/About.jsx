@@ -105,8 +105,9 @@ const About = () => {
    const Style = useStyles();
    return (
       <>
-         <Grid container>
-            <Grid sm={4}>
+         <Grid container data-aos="fade-up"
+     data-aos-duration="3000">
+            <Grid sm={4} >
                <div className={Style.AboutImg}>
                   <div className={Style.Icon}>
                      <FaPlay />
@@ -114,7 +115,7 @@ const About = () => {
                </div>
             </Grid>
             <Grid sm={8}>
-               <div className={Style.aboutContent}>
+               <div className={Style.aboutContent} >
                   <div className={Style.sectionHeadline}>
                      <h3>
                         Technology <span class="color">more experts</span> that

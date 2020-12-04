@@ -150,7 +150,7 @@ const Footer = () => {
       <>
          <footer>
             <div className={Style.footerArea}>
-               <Container>
+               <Container fixed>
                   <Grid container spacing={3}>
                      <Grid item md={12} lg={5}>
                         <div className={Style.logoFooter}>

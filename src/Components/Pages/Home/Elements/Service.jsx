@@ -76,7 +76,7 @@ const About = () => {
    const Style = useStyles();
    return (
       <>
-         <Container>
+         <Container >
             <div className={Style.headingArea}>
                <h3>Professional services</h3>
                <p>
@@ -84,9 +84,9 @@ const About = () => {
                   then create the road map
                </p>
             </div>
-            <div className={Style.allService}>
+            <div className={Style.allService} >
                <Grid container>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-right">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaDesktop />
@@ -104,7 +104,7 @@ const About = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-right">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaAndroid />
@@ -123,7 +123,7 @@ const About = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-right">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaAppStoreIos />
@@ -142,7 +142,7 @@ const About = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-left">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaGlobe />
@@ -160,7 +160,7 @@ const About = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-left">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaDatabase />
@@ -179,7 +179,7 @@ const About = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid md={4} sm={6} xs={12}>
+                  <Grid md={4} sm={6} xs={12} data-aos="fade-left">
                      <div className={Style.signleService}>
                         <div className={Style.serviceIcon}>
                            <FaBookReader />

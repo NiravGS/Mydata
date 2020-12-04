@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import { makeStyles, Button, Container ,ButtonGroup } from "@material-ui/core";
+import { makeStyles, Button, Container, ButtonGroup } from "@material-ui/core";
 
 // icons
 import CloseIcon from "@material-ui/icons/Close";
@@ -142,7 +142,7 @@ const Header = () => {
                               to="/About"
                               onClick={() => setActive(!active)}
                            >
-                             <ButtonGroup
+                              <ButtonGroup
                                  variant="text"
                                  color="#000"
                                  aria-label="text primary button group"
@@ -156,7 +156,7 @@ const Header = () => {
                               to="/Services"
                               onClick={() => setActive(!active)}
                            >
-                               <ButtonGroup
+                              <ButtonGroup
                                  variant="text"
                                  color="#000"
                                  aria-label="text primary button group"
@@ -204,18 +204,22 @@ const Header = () => {
                      {active ? (
                         <Button
                            className={Style.closeIcon}
-                           onClick={document
-                              .getElementsByTagName("html")[0]
-                              .setAttribute("class", `${Style.Noscroll}`)}
+                           onClick={() => {
+                              document
+                                 .getElementsByTagName("html")[0]
+                                 .removeAttribute("class", `${Style.Noscroll}`);
+                           }}
                         >
                            <CloseIcon />
                         </Button>
                      ) : (
                         <Button
                            className={Style.menuIcon}
-                           onClick={document
-                              .getElementsByTagName("html")[0]
-                              .removeAttribute("class", `${Style.Noscroll}`)}
+                           onClick={() =>
+                              document
+                                 .getElementsByTagName("html")[0]
+                                 .setAttribute("class", `${Style.Noscroll}`)
+                           }
                         >
                            <MenuIcon />
                         </Button>
