@@ -16,6 +16,9 @@ import {
 import Icon from "@material-ui/core/Icon";
 
 const useStyles = makeStyles((theme) => ({
+   " & .MuiInputLabel-outlined ": {
+      transform: "translate(14px, 16px) scale(1)",
+   },
    footerHead: {
       "& h4": {
          color: "#151b2c",

@@ -5,6 +5,10 @@ import { FaLightbulb, FaRegChartBar, FaUsers } from "react-icons/fa";
 const useStyles = makeStyles({
    WellSerice: {
       padding: "40px 30px",
+      "&:hover": {
+         boxShadow: "0px 3px 29px -6px rgba(0,0,0,0.1)",
+         transition: "box-shadow 300ms ease 0ms"
+      }
    },
    ServiceIcon: {
       position: "relative",

@@ -41,6 +41,10 @@ const useStyles = makeStyles((theme) => ({
       },
       "& .MuiInputBase-multiline": {
          height: "158px"
+      },
+      "& .MuiInputLabel-shrink": {
+         backgroundColor: "#062241"
+
       }
    },
    palette: {

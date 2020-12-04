@@ -37,14 +37,14 @@ const useStyles = makeStyles((theme) => ({
       margin: "20px",
       boxShadow: "none",
       border: "1px solid rgba(48,120,251,0.4)",
-      height: "305px",
+      "@media (max-width:1024px)": {
+         padding: "20px",
+      },
       "@media (max-width:991px)": {
-          padding: "20px",
-          height: "280px",
+         padding: "20px",
       },
       "@media (max-width:767px)": {
-          padding: "20px",
-          height: "auto",
+         padding: "20px",
       },
    },
    serviceIcon: {
@@ -62,9 +62,16 @@ const useStyles = makeStyles((theme) => ({
          padding: "0 0 15px",
          textTransform: "capitalize",
          fontWeight: "500",
+         "@media (max-width:1024px)": {
+            height:"60px"
+         },
       },
       "& p": {
          fontSize: "16px",
+         height: "180px",
+         "@media (max-width:1024px)": {
+            height:"280px"
+         },
       },
       control: {
          padding: theme.spacing(2),
@@ -76,7 +83,7 @@ const About = () => {
    const Style = useStyles();
    return (
       <>
-         <Container >
+         <Container>
             <div className={Style.headingArea}>
                <h3>Professional services</h3>
                <p>
@@ -84,7 +91,7 @@ const About = () => {
                   then create the road map
                </p>
             </div>
-            <div className={Style.allService} >
+            <div className={Style.allService}>
                <Grid container>
                   <Grid md={4} sm={6} xs={12} data-aos="fade-right">
                      <div className={Style.signleService}>
